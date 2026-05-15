@@ -46,6 +46,7 @@ export default function MenuPriceSection() {
     <section className="py-14 sm:py-20 bg-white">
       <div className="section-container">
         <div className="mb-10">
+          
           <p className="section-lead">SERVICE & PRICE</p>
           <h2 className="section-title">施術メニューと料金</h2>
           <p className="text-base text-gray-600 leading-relaxed">

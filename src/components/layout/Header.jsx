@@ -5,9 +5,11 @@ const navLinks = [
   { label: '当院について', to: '/staff' },
   { label: '料金・保険', to: '/price' },
   { label: 'ご利用の流れ', to: '/flow' },
+  { label: 'お客様の声', to: '/voice' },
   { label: 'よくあるご質問', to: '/faq' },
   { label: 'お問い合わせ', to: '/contact' },
   { label: 'ケアマネ様へ', to: '/care-manager' },
+  
 ]
 
 export default function Header() {
@@ -26,7 +28,7 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="section-container">
+      <div className="max-w-5xl mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3" onClick={() => setIsOpen(false)}>
@@ -34,20 +36,21 @@ export default function Header() {
               <span className="text-white text-xl font-serif tracking-tighter">BC</span>
             </div>
             <div>
-              <p className="text-[11px] text-gray-500 leading-none mb-1.5">訪問マッサージ治療院</p>
-              <p className="text-lg font-bold text-gray-800 leading-none font-serif">
-                ボディケアつしま
+              
+              <p className="text-[17px] font-bold text-gray-800 leading-none font-serif">
+                ボディケア<br />つしま
               </p>
+             
             </div>
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center gap-0.5">
+          <nav className="hidden lg:flex items-center gap-0">
             {navLinks.map((link) => (
               <Link
                 key={link.to}
                 to={link.to}
-                className={`text-sm px-3 py-2 font-medium transition-colors whitespace-nowrap ${
+                className={`text-sm px-2 py-2 font-medium transition-colors whitespace-nowrap ${
                   pathname === link.to
                     ? 'text-primary-700 border-b-2 border-primary-600'
                     : 'text-gray-600 hover:text-primary-700'
@@ -59,7 +62,7 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center gap-2">
-            <a href="tel:086-238-1733" className="hidden sm:flex items-center gap-2 px-4 py-2 text-primary-700">
+            <a href="tel:086-238-1733" className="hidden xl:flex items-center gap-2 px-4 py-2 text-primary-700">
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
               </svg>

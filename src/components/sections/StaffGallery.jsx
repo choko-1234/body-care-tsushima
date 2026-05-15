@@ -1,7 +1,8 @@
+import { Link } from 'react-router-dom'
 const staff = [
   {
     id: 1,
-    name: '院長',
+    name: '高森直樹',
     role: '施術担当',
     licenses: ['あん摩マッサージ指圧師', 'はり師', 'きゅう師'],
     experience: '訪問マッサージ歴 20年',
@@ -36,12 +37,9 @@ export default function StaffGallery() {
         {/* Staff card */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16">
           {/* Photo */}
-          <div className="lg:col-span-4">
-            <div className="bg-primary-100 aspect-[3/4] border border-primary-200 flex items-center justify-center">
-              <div className="text-center text-primary-600">
-                <p className="text-sm opacity-70">院長 顔写真</p>
-                <p className="text-xs opacity-50 mt-1">差し替えてください</p>
-              </div>
+          <div className="lg:col-span-4 max-w-xs lg:max-w-none mx-auto lg:mx-0 w-full">
+            <div className="bg-primary-100 border-primary-200 flex items-center justify-center p-6">
+              <img src="/naoki4.jpg" alt="院長の写真" className="w-4/5 h-auto rounded-md" />
             </div>
           </div>
           {/* Info */}
@@ -80,6 +78,11 @@ export default function StaffGallery() {
                 <p className="text-sm text-gray-500 text-right">— {v.author}</p>
               </div>
             ))}
+            <div className="md:col-span-3 text-center">
+              <Link to="/voice" className="inline-block bg-primary-700 text-white px-6 py-3 rounded-md hover:bg-primary-800 transition-colors">
+                すべての声を見る
+              </Link>
+            </div>
           </div>
         </div>
       </div>

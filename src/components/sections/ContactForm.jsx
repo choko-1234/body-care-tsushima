@@ -1,4 +1,33 @@
+import { useState } from 'react'
+
 export default function ContactForm() {
+
+ const [formData, setFormData] = useState({
+    name: '',
+    phone: '',
+    email: '',
+    category: '',
+    message: '',
+ })
+
+ const handleSubmit = async (e) => {
+  e.preventDefault()
+  if (!formData.name || !formData.email || !formData.message) {
+    alert('お名前・メールアドレス・お問い合わせ内容は必須です。')
+    return
+  }
+  const res = await fetch('https://formspree.io/f/xykoabol',{
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify(formData),
+  })
+  if (res.ok) {
+    alert('送信しました。')
+  } else{
+    alert('送信に失敗しました。時間をおいて再度お試しください。')
+  }
+}
+
   return (
     <section className="py-14 sm:py-20 bg-white">
       <div className="section-container">
@@ -34,7 +63,7 @@ export default function ContactForm() {
           </div>
         </div>
 
-        <form onSubmit={(e) => e.preventDefault()} className="bg-cream-50 border border-cream-200 rounded-md p-6 sm:p-10 space-y-5">
+        <form onSubmit={handleSubmit} className="bg-cream-50 border border-cream-200 rounded-md p-6 sm:p-10 space-y-5">
           <h3 className="text-lg font-serif font-bold text-gray-800 mb-2 pb-3 border-b border-cream-200">
             メールフォームでのお問い合わせ
           </h3>
@@ -44,11 +73,11 @@ export default function ContactForm() {
               <label className="block text-sm font-bold text-gray-700 mb-1.5">
                 お名前　<span className="text-red-600 text-xs">必須</span>
               </label>
-              <input type="text" className="w-full border border-gray-300 rounded px-4 py-3 text-base bg-white focus:outline-none focus:border-primary-500" />
+              <input type="text" value={formData.name} onChange={(e) => setFormData({...formData, name: e.target.value})} className="w-full border border-gray-300 rounded px-4 py-3 text-base bg-white focus:outline-none focus:border-primary-500" />
             </div>
             <div>
               <label className="block text-sm font-bold text-gray-700 mb-1.5">電話番号</label>
-              <input type="tel" className="w-full border border-gray-300 rounded px-4 py-3 text-base bg-white focus:outline-none focus:border-primary-500" />
+              <input type="tel" value={formData.phone} onChange={(e) => setFormData({...formData, phone: e.target.value})} className="w-full border border-gray-300 rounded px-4 py-3 text-base bg-white focus:outline-none focus:border-primary-500" />
             </div>
           </div>
 
@@ -56,12 +85,12 @@ export default function ContactForm() {
             <label className="block text-sm font-bold text-gray-700 mb-1.5">
               メールアドレス　<span className="text-red-600 text-xs">必須</span>
             </label>
-            <input type="email" className="w-full border border-gray-300 rounded px-4 py-3 text-base bg-white focus:outline-none focus:border-primary-500" />
+            <input type="email" value={formData.email} onChange={(e) => setFormData({...formData, email: e.target.value})} className="w-full border border-gray-300 rounded px-4 py-3 text-base bg-white focus:outline-none focus:border-primary-500" />
           </div>
 
           <div>
             <label className="block text-sm font-bold text-gray-700 mb-1.5">お問い合わせ種別</label>
-            <select className="w-full border border-gray-300 rounded px-4 py-3 text-base bg-white focus:outline-none focus:border-primary-500">
+            <select value={formData.category} onChange={(e) => setFormData({...formData, category: e.target.value})} className="w-full border border-gray-300 rounded px-4 py-3 text-base bg-white focus:outline-none focus:border-primary-500">
               <option value="">選択してください</option>
               <option>無料体験のお申し込み</option>
               <option>保険適用について</option>
@@ -78,6 +107,8 @@ export default function ContactForm() {
             </label>
             <textarea
               rows={5}
+              value={formData.message}
+              onChange={(e) => setFormData({...formData, message: e.target.value})}
               className="w-full border border-gray-300 rounded px-4 py-3 text-base bg-white focus:outline-none focus:border-primary-500 resize-none"
             />
           </div>

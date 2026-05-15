@@ -2,6 +2,7 @@ import Header from '../components/layout/Header'
 import Footer from '../components/layout/Footer'
 import FloatingButtons from '../components/layout/FloatingButtons'
 import Hero from '../components/sections/Hero'
+import RepeatRateBanner from '../components/sections/RepeatRateBanner'
 import WorriesSection from '../components/sections/WorriesSection'
 import ServiceDefinitionSection from '../components/sections/ServiceDefinitionSection'
 import MenuPriceSection from '../components/sections/MenuPriceSection'
@@ -12,6 +13,8 @@ export default function HomePage() {
     <div className="min-h-screen">
       <Header />
       <main>
+        {/* 0. リピート率バナー */}
+        <RepeatRateBanner />
         {/* 1. キャッチコピー */}
         <Hero />
         {/* 2. お悩みチェックリスト */}

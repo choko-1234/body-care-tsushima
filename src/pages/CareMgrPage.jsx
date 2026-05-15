@@ -3,22 +3,31 @@ import Header from '../components/layout/Header'
 import Footer from '../components/layout/Footer'
 import FloatingButtons from '../components/layout/FloatingButtons'
 
-const benefits = [
+const items = [
   {
+    worry: '「マッサージを受けたい」という相談を受けても、介護保険の枠が気になる',
     title: '介護保険の枠を圧迫しません',
-    body: '訪問マッサージは医療保険の枠組み。ケアプランの限度額を消費しないため、デイサービスや訪問介護を並行利用中の方にも提案いただけます。',
+    body: '訪問マッサージは医療保険の枠組みです。ケアプランの限度額を消費しないため、デイサービスや訪問介護を並行利用中の方にも安心してご提案いただけます。',
   },
   {
-    title: '月次の報告書をお渡しします',
-    body: '担当者様にあてた施術記録・状態変化のレポートを毎月作成しています。ケアプラン作成時の資料としてお使いください。',
+    worry: '施術後の利用者の状態変化が把握できない',
+    title: '施術経過報告書を定期提供',
+    body: '担当者様あての施術記録・状態変化のレポートを6ヶ月ごとに作成します。ケアプラン見直しや多職種間の情報共有にお役立てください。',
   },
   {
-    title: '同意書取得をサポート',
-    body: '主治医に提出いただく同意書は、当院が書式・記入のポイントも含めてご案内します。先生に直接ご説明も可能です。',
+    worry: '同意書の手続きが煩雑になりそうで提案しにくい',
+    title: '同意書の取得は当院がサポート',
+    body: '主治医に提出する同意書の書式・記入ポイントは当院がご案内します。必要に応じて先生への直接説明も対応しています。',
   },
   {
-    title: '緊急時の連絡体制',
-    body: '体調変化や事故時には、ご家族・ケアマネ様・主治医へ速やかにご連絡します。多職種連携の一員としてお役に立ちます。',
+    worry: '多職種連携がうまくいくか不安',
+    title: 'サービス担当者会議に出席します',
+    body: 'ご要望があればサービス担当者会議にも参加します。施術状況や身体機能の変化をその場でお伝えし、チームケアの一員として連携します。',
+  },
+  {
+    worry: '訪問中に何かあったとき、すぐに連絡してもらえるか不安',
+    title: '体調急変時はすぐにご連絡',
+    body: '訪問中に体調変化や気になる点があれば、ご家族・ケアマネ様・主治医へ速やかにご連絡します。何かあれば一報できる体制を整えています。',
   },
 ]
 
@@ -48,21 +57,33 @@ export default function CareMgrPage() {
           </div>
         </section>
 
-        {/* Benefits */}
-        <section className="py-14 sm:py-20 bg-white">
+        {/* Worry × Solution pairs */}
+        <section className="py-14 sm:py-20 bg-cream-50">
           <div className="section-container">
             <div className="mb-10">
-              <p className="section-lead">MERIT</p>
-              <h2 className="section-title">ご紹介いただくメリット</h2>
+              <p className="section-lead">SUPPORT</p>
+              <h2 className="section-title">ケアマネジャー様のお悩みに、こうお応えします</h2>
+              <p className="text-base text-gray-600 leading-relaxed">
+                よくいただくお悩みと、それに対する当院の取り組みをまとめました。
+              </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-              {benefits.map((b) => (
-                <div key={b.title} className="bg-cream-50 border border-cream-200 rounded-md p-6">
-                  <h3 className="text-lg font-serif font-bold text-primary-800 mb-3 pb-2 border-b border-cream-200">
-                    {b.title}
-                  </h3>
-                  <p className="text-base text-gray-700 leading-relaxed">{b.body}</p>
+            <div className="space-y-5">
+              {items.map((item, i) => (
+                <div key={i} className="bg-white border border-cream-200 rounded-md overflow-hidden">
+                  <div className="grid grid-cols-1 md:grid-cols-12">
+                    {/* お悩み */}
+                    <div className="md:col-span-5 bg-slate-50 p-6 md:p-7 border-b md:border-b-0 md:border-r border-cream-200">
+                      <p className="text-xs font-bold text-slate-500 tracking-wider mb-2">お悩み</p>
+                      <p className="text-base sm:text-lg text-gray-700 leading-relaxed">{item.worry}</p>
+                    </div>
+                    {/* 当院の対応 */}
+                    <div className="md:col-span-7 p-6 md:p-7">
+                      <p className="text-xs font-bold text-primary-700 tracking-wider mb-2">当院の対応</p>
+                      <h3 className="text-lg sm:text-xl font-serif font-bold text-primary-800 mb-2">{item.title}</h3>
+                      <p className="text-base text-gray-700 leading-relaxed">{item.body}</p>
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>

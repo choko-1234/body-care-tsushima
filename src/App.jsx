@@ -6,6 +6,7 @@ import FlowPage from './pages/FlowPage'
 import FAQPage from './pages/FAQPage'
 import ContactPage from './pages/ContactPage'
 import CareMgrPage from './pages/CareMgrPage'
+import VoicePage from './pages/VoicePage'
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
         <Route path="/faq" element={<FAQPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/care-manager" element={<CareMgrPage />} />
+        <Route path="/voice" element={<VoicePage />} />
       </Routes>
     </BrowserRouter>
   )

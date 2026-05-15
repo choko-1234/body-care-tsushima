@@ -2,9 +2,18 @@ export default function Hero() {
   return (
     <section className="bg-cream-50 border-b border-cream-200">
       <div className="section-container py-12 sm:py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-          {/* Text */}
-          <div className="lg:col-span-7 order-2 lg:order-1">
+        <div className="flex flex-col gap-10">
+          {/* Image - 一番上 */}
+          <div className="w-full max-w-4xl mx-auto">
+            <img
+              src="/menu.jpg"
+              alt="施術風景"
+              className="w-full h-auto object-contain border border-primary-200"
+            />
+          </div>
+
+          {/* Text - その下 */}
+          <div>
             <p className="text-sm text-primary-700 font-bold mb-4 tracking-wider">
               岡山市の訪問マッサージ治療院
             </p>
@@ -37,16 +46,6 @@ export default function Hero() {
             <p className="text-sm text-gray-500">
               受付時間　月〜金　9:00〜18:00（土曜は事前予約のみ・日祝定休）
             </p>
-          </div>
-
-          {/* Image */}
-          <div className="lg:col-span-5 order-1 lg:order-2">
-            <div className="bg-primary-100 aspect-[4/5] flex items-center justify-center overflow-hidden border border-primary-200">
-              <div className="text-center text-primary-600 p-6">
-                <p className="text-sm opacity-70 mb-2">メインビジュアル</p>
-                <p className="text-xs opacity-50">施術風景の写真に差し替え</p>
-              </div>
-            </div>
           </div>
         </div>
 
