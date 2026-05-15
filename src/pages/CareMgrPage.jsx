@@ -95,7 +95,7 @@ export default function CareMgrPage() {
           <div className="section-container">
             <div className="mb-10">
               <p className="section-lead">DOWNLOADS</p>
-              <h2 className="section-title">書類ダウンロード</h2>
+              <h2 className="section-title">書類ダウンロード(これいる？)</h2>
               <p className="text-base text-gray-600 leading-relaxed">
                 同意書の雛形やサービス案内をPDFでダウンロードいただけます。
               </p>

@@ -19,7 +19,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-gray-200">
       {/* Top info bar */}
-      <div className="hidden lg:block bg-primary-700 text-primary-50 text-xs">
+      <div className="hidden lg:block bg-primary-700 text-primary-50 text-lg">
         <div className="section-container">
           <div className="flex items-center justify-between h-8">
             <p>岡山市の訪問マッサージ治療院（医療保険適用）</p>

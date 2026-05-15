@@ -43,7 +43,7 @@ export default function Hero() {
               </a>
             </div>
 
-            <p className="text-sm text-gray-500">
+            <p className="text-lg text-gray-500">
               受付時間　月〜金　9:00〜18:00（土曜は事前予約のみ・日祝定休）
             </p>
           </div>
