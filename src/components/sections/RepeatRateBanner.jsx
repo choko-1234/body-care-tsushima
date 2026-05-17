@@ -1,7 +1,7 @@
 export default function RepeatRateBanner() {
   return (
-    <section className="bg-cream-50 border-b ">
-      <div className="section-container py-8 sm:py-10 bg-cream-100 border-t border-cream-200" >
+    <section className="bg-cream-100 border-b ">
+      <div className="section-container py-8 sm:py-10 bg-cream-200 border-t border-cream-200" >
         <div className="text-center max-w-3xl mx-auto" >
           <p className="text-sm sm:text-base text-gray-700 mb-3 tracking-wide">
             主に、脳梗塞（脳出血）後遺症やパーキンソン病の方を対象にした

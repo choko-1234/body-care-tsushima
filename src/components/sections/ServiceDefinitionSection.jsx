@@ -18,9 +18,10 @@ export default function ServiceDefinitionSection() {
         <div className="bg-white border border-gray-200 rounded-md p-7 sm:p-10 mb-10">
           <p className="text-lg sm:text-xl text-gray-800 leading-[1.9] font-serif">
             「ボディケアつしま」の訪問マッサージは、<br className="hidden sm:block" />
-            <span className="text-primary-700 font-bold">国家資格を持つ施術者</span>がご自宅や施設へ伺い、<br className="hidden sm:block" />
+            <span className="text-primary-700 font-bold">国家資格を持つ施術者</span>がご自宅や施設へお伺いして、<br className="hidden sm:block" />
+            要介護者の方を対象に、
             <span className="text-primary-700 font-bold">医療保険を適用</span>して、<br className="hidden sm:block" />
-            マッサージや機能訓練（リハビリ）を行うサービスです。
+            マッサージや簡単な機能訓練（リハビリ）を行うサービスです。
           </p>
         </div>
 
@@ -54,7 +55,7 @@ export default function ServiceDefinitionSection() {
               </div>
               <div>
                 <dt className="font-bold text-primary-700 mb-1">経済的な負担を抑えます</dt>
-                <dd className="text-sm">医療保険適用で、1回あたりのご負担は数百円から。長く続けやすい料金です。</dd>
+                <dd className="text-sm">医療保険適用で、1回あたりのご負担は1割負担で数百円から。長く続けやすい料金です。</dd>
               </div>
               <div>
                 <dt className="font-bold text-primary-700 mb-1">無料の体験施術ができます</dt>

@@ -14,9 +14,6 @@ export default function Hero() {
 
           {/* Text - その下 */}
           <div>
-            <p className="text-sm text-primary-700 font-bold mb-4 tracking-wider">
-              岡山市の訪問マッサージ治療院
-            </p>
 
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-gray-800 leading-[1.4] mb-6">
               ご自宅で受けられる、<br />
@@ -26,7 +23,7 @@ export default function Hero() {
 
             <div className="bg-white border-l-4 border-primary-600 px-5 py-4 mb-7">
               <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                外出が難しい方のもとへ、国家資格を持つ施術者が伺います。<br />
+                外出が難しい方のもとへ、国家資格を持つ施術者がお伺いします。<br />
                 医師の同意があれば、<strong className="text-primary-700">医療保険でのご利用</strong>が可能です。
               </p>
             </div>
@@ -44,7 +41,7 @@ export default function Hero() {
             </div>
 
             <p className="text-lg text-gray-500">
-              受付時間　月〜金　9:00〜18:00（土曜は事前予約のみ・日祝定休）
+              受付時間　月〜金　9:00〜18:00（土・日定休日　祝日は基本的に通常営業）
             </p>
           </div>
         </div>

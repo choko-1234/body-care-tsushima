@@ -5,7 +5,7 @@ import Hero from '../components/sections/Hero'
 import RepeatRateBanner from '../components/sections/RepeatRateBanner'
 import WorriesSection from '../components/sections/WorriesSection'
 import ServiceDefinitionSection from '../components/sections/ServiceDefinitionSection'
-import MenuPriceSection from '../components/sections/MenuPriceSection'
+import AboutUsSection from '../components/sections/AboutUsSection'
 import TrialForm from '../components/sections/TrialForm'
 
 export default function HomePage() {
@@ -22,9 +22,9 @@ export default function HomePage() {
         {/* 3. サービスの定義 */}
         <ServiceDefinitionSection />
         {/* 4. サービス紹介 + ご利用者様の声（SEO用） */}
-        <MenuPriceSection />
+        <AboutUsSection />
         {/* 無料体験フォーム */}
-        <TrialForm />
+        {/*<TrialForm /> */}
       </main>
       <Footer />
       <FloatingButtons />

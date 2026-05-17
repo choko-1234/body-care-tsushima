@@ -5,12 +5,12 @@ const testimonial = {
   image: '/voices/letter-1.jpg',
   title: '感謝の毎日を過ごしております',
   text: '訪問して下さる方は、実直で熱心なお人柄ですので、御親切にご指導していただいております。感謝の毎日を過ごしております。一人暮らしの老人で、分からない事がありましたらすぐに対処して下さるし、私のつまらない愚痴や悩みも話しますので、心が癒えて大変助かっております。良いお方にお世話になり、喜んでおります。よろしくお願い申し上げます。',
-  author: '70代女性',
+  author: '80代女性',
   relation: 'ご本人より',
   area: '岡山市北区',
 }
 
-export default function MenuPriceSection() {
+export default function AboutUsSection() {
   return (
     <section className="py-14 sm:py-20 bg-white">
       <div className="section-container">
@@ -25,7 +25,7 @@ export default function MenuPriceSection() {
           {/* ブロック1: 実績 */}
           <div className="space-y-4">
             <h3 className="text-xl sm:text-2xl font-serif font-bold text-gray-800">
-              岡山市での訪問マッサージ実績
+              訪問マッサージ実績
             </h3>
             <p>
               ボディケア つしまでは、上記のような不安やお悩みを解決するためのお手伝いとして、医療保険を適用した「訪問マッサージ」を行っております。今までに、在宅及び介護施設内入居者の方を対象に、現在も施術継続中の方、実費施術の方を含めて、トータル<strong className="text-primary-700">約109名の方のサポート（のべ施術時間8000時間超）</strong>をさせていただいてまいりました。その経験を生かして、あなたの体のケアに全力で取り組んでまいります。
