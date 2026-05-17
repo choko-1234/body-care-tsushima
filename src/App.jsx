@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import StaffPage from './pages/StaffPage'
 import PricePage from './pages/PricePage'
@@ -7,10 +7,25 @@ import FAQPage from './pages/FAQPage'
 import ContactPage from './pages/ContactPage'
 import CareMgrPage from './pages/CareMgrPage'
 import VoicePage from './pages/VoicePage'
+import { useEffect } from 'react'
 
+
+function ScrollTop() {
+    const location = useLocation()
+
+    useEffect(() => {
+      window.scrollTo(0, 0)
+    }, [location])
+
+    return null
+}
 export default function App() {
+  // ページ遷移時にトップにスクロールするコンポーネント
+  
+
   return (
     <BrowserRouter>
+      <ScrollTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/staff" element={<StaffPage />} />

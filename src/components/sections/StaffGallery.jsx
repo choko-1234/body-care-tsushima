@@ -38,8 +38,8 @@ export default function StaffGallery() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16">
           {/* Photo */}
           <div className="lg:col-span-4 max-w-xs lg:max-w-none mx-auto lg:mx-0 w-full">
-            <div className="bg-primary-100 border-primary-200 flex items-center justify-center p-6">
-              <img src="/naoki4.jpg" alt="院長の写真" className="w-4/5 h-auto rounded-md" />
+            <div className="bg-cream-50  flex items-center justify-center p-6">
+              <img src="/naoki4.jpg" alt="院長の写真" className="w-full h-auto rounded-md" />
             </div>
           </div>
           {/* Info */}

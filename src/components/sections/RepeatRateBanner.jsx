@@ -1,7 +1,7 @@
 export default function RepeatRateBanner() {
   return (
     <section className="bg-cream-50 border-b ">
-      <div className="section-container py-8 sm:py-10" style={{ backgroundColor: '#ddd6bf', borderRadius: '8px' }}>
+      <div className="section-container py-8 sm:py-10 bg-cream-100 border-t border-cream-200" >
         <div className="text-center max-w-3xl mx-auto" >
           <p className="text-sm sm:text-base text-gray-700 mb-3 tracking-wide">
             主に、脳梗塞（脳出血）後遺症やパーキンソン病の方を対象にした
@@ -9,7 +9,7 @@ export default function RepeatRateBanner() {
 
           <h2 className="font-serif font-bold leading-snug text-gray-800">
             <span className="block sm:inline text-3xl sm:text-4xl lg:text-5xl text-rose-600">
-              リピート率92.3<span className="text-2xl sm:text-3xl lg:text-4xl">%</span>
+              リピート率92.3<span className="text-2xl sm:text-3xlg:text-4xl">%</span>
             </span>
             <span className="hidden sm:inline mx-2 text-xl text-gray-500">の</span>
             <span className="block sm:inline text-2xl sm:text-3xl lg:text-4xl text-primary-700 mt-1 sm:mt-0">

@@ -21,7 +21,7 @@ export default function HomePage() {
         <WorriesSection />
         {/* 3. サービスの定義 */}
         <ServiceDefinitionSection />
-        {/* 4. メニューと料金表 */}
+        {/* 4. サービス紹介 + ご利用者様の声（SEO用） */}
         <MenuPriceSection />
         {/* 無料体験フォーム */}
         <TrialForm />

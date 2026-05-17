@@ -8,7 +8,7 @@ export default function Hero() {
             <img
               src="/menu.jpg"
               alt="施術風景"
-              className="w-full h-auto object-contain border border-primary-200"
+              className="w-full h-auto object-contain border border-primary-200 rounded-lg shadow-sm" 
             />
           </div>
 

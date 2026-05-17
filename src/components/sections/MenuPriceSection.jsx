@@ -1,143 +1,170 @@
 import { Link } from 'react-router-dom'
 
-const menus = [
-  {
-    name: 'マッサージ施術',
-    catch: '麻痺・拘縮のある方に',
-    description: '硬くなった筋肉をほぐし、血行を促します。脳卒中後遺症や関節拘縮の方に行う、もっとも基本的な施術です。',
-    duration: '約20分〜',
-    insurance: '医療保険適用',
-    note: '医師の同意書が必要です',
-  },
-  {
-    name: '変形徒手矯正術',
-    catch: '関節の動きをよくする',
-    description: '動きの悪くなった関節を、徒手で少しずつ動かして可動域を広げます。マッサージと併用して行います。',
-    duration: '1関節 約5分〜',
-    insurance: '医療保険適用',
-    note: '医師の同意書が必要です',
-  },
-  {
-    name: '機能訓練（リハビリ）',
-    catch: 'ご自宅での生活を支える',
-    description: '寝返り・起き上がり・立ち上がり・歩行など、生活に必要な動作の練習を行います。',
-    duration: '約10分〜',
-    insurance: 'マッサージと併用',
-    note: '退院後の方にもおすすめ',
-  },
-  {
-    name: '整形外科疾患（実費）',
-    catch: '保険適用外の方向け',
-    description: '腰痛・肩こり・膝痛など、保険適用外の症状に対応します。料金はお問い合わせください。',
-    duration: '約30分〜',
-    insurance: '実費（自費）',
-    note: '料金は事前にご案内します',
-  },
-]
-
-const priceTable = [
-  { label: '1割負担の方', range: '約300〜500円' },
-  { label: '2割負担の方', range: '約600〜1,000円' },
-  { label: '3割負担の方', range: '約900〜1,500円' },
-]
+const testimonial = {
+  id: 1,
+  image: '/voices/letter-1.jpg',
+  title: '感謝の毎日を過ごしております',
+  text: '訪問して下さる方は、実直で熱心なお人柄ですので、御親切にご指導していただいております。感謝の毎日を過ごしております。一人暮らしの老人で、分からない事がありましたらすぐに対処して下さるし、私のつまらない愚痴や悩みも話しますので、心が癒えて大変助かっております。良いお方にお世話になり、喜んでおります。よろしくお願い申し上げます。',
+  author: '70代女性',
+  relation: 'ご本人より',
+  area: '岡山市北区',
+}
 
 export default function MenuPriceSection() {
   return (
     <section className="py-14 sm:py-20 bg-white">
       <div className="section-container">
         <div className="mb-10">
-          
-          <p className="section-lead">SERVICE & PRICE</p>
-          <h2 className="section-title">施術メニューと料金</h2>
-          <p className="text-base text-gray-600 leading-relaxed">
-            医療保険適用の施術と、保険適用外（実費）の施術をご用意しています。<br className="hidden sm:block" />
-            ご利用前に内容と料金を必ずご説明しますので、ご安心ください。
-          </p>
+          <p className="section-lead">ABOUT US</p>
+          <h2 className="section-title">岡山市の訪問医療マッサージについて</h2>
         </div>
 
-        {/* Menu list */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-12">
-          {menus.map((m) => (
-            <div key={m.name} className="bg-cream-50 border border-cream-200 rounded-md p-6 sm:p-7">
-              <div className="flex items-start justify-between gap-3 mb-3">
-                <div>
-                  <p className="text-xs text-primary-700 font-bold tracking-widest mb-2">
-                    {m.catch}
-                  </p>
-                  <h3 className="text-xl font-serif font-bold text-gray-800">{m.name}</h3>
-                </div>
-                <span className={`shrink-0 text-xs font-bold px-2.5 py-1 rounded border ${
-                  m.insurance === '実費（自費）'
-                    ? 'bg-amber-50 text-amber-800 border-amber-300'
-                    : 'bg-primary-50 text-primary-800 border-primary-300'
-                }`}>
-                  {m.insurance}
-                </span>
-              </div>
-              <p className="text-base text-gray-700 leading-relaxed mb-4">{m.description}</p>
-              <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm text-gray-600 pt-3 border-t border-cream-200">
-                <span>所要時間：{m.duration}</span>
-                <span className="text-gray-400">／</span>
-                <span>{m.note}</span>
-              </div>
-            </div>
-          ))}
-        </div>
+        {/* SEO本文 */}
+        <div className="max-w-3xl mx-auto text-base sm:text-lg text-gray-700 leading-loose space-y-10">
 
-        {/* Price table */}
-        <div className="bg-cream-50 border border-cream-200 rounded-md overflow-hidden">
-          <div className="px-6 py-5 bg-primary-700 text-white">
-            <h3 className="text-lg font-serif font-bold">医療保険適用時の1回あたりの自己負担（目安）</h3>
-            <p className="text-sm text-primary-100 mt-1">
-              施術内容・距離・加算により金額は変動します。詳細はお問い合わせください。
+          {/* ブロック1: 実績 */}
+          <div className="space-y-4">
+            <h3 className="text-xl sm:text-2xl font-serif font-bold text-gray-800">
+              岡山市での訪問マッサージ実績
+            </h3>
+            <p>
+              ボディケア つしまでは、上記のような不安やお悩みを解決するためのお手伝いとして、医療保険を適用した「訪問マッサージ」を行っております。今までに、在宅及び介護施設内入居者の方を対象に、現在も施術継続中の方、実費施術の方を含めて、トータル<strong className="text-primary-700">約109名の方のサポート（のべ施術時間8000時間超）</strong>をさせていただいてまいりました。その経験を生かして、あなたの体のケアに全力で取り組んでまいります。
             </p>
           </div>
-          <table className="w-full text-base">
-            <tbody>
-              {priceTable.map((p, i) => (
-                <tr key={p.label} className={i % 2 === 0 ? 'bg-white' : 'bg-cream-50'}>
-                  <th className="text-left py-4 px-5 sm:px-7 font-bold text-gray-700 w-1/2 border-b border-cream-200">
-                    {p.label}
-                  </th>
-                  <td className="py-4 px-5 sm:px-7 text-primary-700 font-bold border-b border-cream-200">
-                    {p.range}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-          <div className="px-6 py-4 bg-cream-100 text-sm text-gray-600 leading-relaxed">
-            <p>※ 医師の同意書が必要です。同意書の取得は当院が手続きをサポートします。</p>
-            <p>※ 距離加算（自宅までの移動）が含まれる場合があります。</p>
+
+          {/* ブロック2: 無料体験 */}
+          <div className="space-y-4">
+            <h3 className="text-xl sm:text-2xl font-serif font-bold text-gray-800">
+              まずは無料お試し体験から
+            </h3>
+            <p>
+              「この訪問マッサージが本当に自分に合うだろうか。」と不安に思われるかもしれません。ですので、当院では、最初にお試し無料体験を受けていただき、その後で、実際に継続されるかどうかの判断をしていただいております。
+            </p>
+            <p className="text-center text-lg sm:text-xl font-bold text-primary-700 py-2">
+              まずは無料お試しで、訪問マッサージを体験してみて下さい。
+            </p>
           </div>
+
+          {/* ブロック3: 対象となる方 */}
+          <div className="space-y-4">
+            <h3 className="text-xl sm:text-2xl font-serif font-bold text-gray-800">
+              医療保険適用の訪問マッサージ｜対象となる方
+            </h3>
+            <p>
+              私は岡山市で訪問マッサージを行うようになってから<strong>20年目</strong>になりますが、開始当初と現在では、訪問マッサージの適用条件がかなりシビアになってきています。
+            </p>
+            <p>
+              基本的にこのサービスは、<strong>脳卒中後遺症による筋肉の麻痺</strong>、その他主に<strong>脳神経疾患が引き起こす筋肉の萎縮や固縮</strong>などの症状がある方、あるいは<strong>関節拘縮（関節が固くなって動かしにくい状態）</strong>がある方で、同時に歩行困難な方が対象となります。
+            </p>
+
+            <div className="space-y-3">
+              <h4 className="text-lg font-bold text-gray-800">歩行困難の具体的な基準</h4>
+              <div className="bg-cream-50 border-l-4 border-primary-300 px-6 py-5">
+                <p className="mb-3">この歩行困難というのは、具体的には、</p>
+                <ol className="space-y-3 ml-1">
+                  <li className="flex gap-3">
+                    <span className="font-bold text-primary-700 shrink-0">①</span>
+                    <span>付き添い等なく、一人で公共交通機関を使っての外出が困難な方。</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="font-bold text-primary-700 shrink-0">②</span>
+                    <span>認知症や視覚、内部、精神症状などにより、単独での外出が困難な方。</span>
+                  </li>
+                </ol>
+                <p className="mt-3">といった理由に該当するかどうかで判断されます。</p>
+              </div>
+            </div>
+          </div>
+
+          {/* ブロック4: 整形外科疾患について */}
+          <div className="space-y-4">
+            <h3 className="text-xl sm:text-2xl font-serif font-bold text-gray-800">
+              腰痛・肩こり・膝痛など整形外科疾患をお持ちの方へ
+            </h3>
+            <p>
+              ここ最近は、「整形外科的な疾患により痛みや痺れが辛いので、訪問マッサージをお願いします。」といったお問い合わせが多いのですが、こちらにつきましては、過去には認められたケースもありますが、<strong>基本的に現在は、医療保険の対象にはなりません。</strong>（岡山県後期高齢者医療広域連合からも指示が有り。特に、2019年位から厳しくなっていますので、ご希望の方には実費にて対応しています。）
+            </p>
+            <p>
+              全国的にも、年々医療財政は厳しくなっています。
+            </p>
+            <p className="font-bold text-gray-800">
+              これからも、不正行為や不正請求をする事なく、この地元岡山で訪問マッサージ業務を継続していく所存です。
+            </p>
+          </div>
+
         </div>
 
-        <div className="mt-8 text-center">
-          <Link
-            to="/price"
-            className="inline-flex items-center gap-2 text-base text-primary-700 hover:text-primary-800 font-bold underline underline-offset-4"
-          >
-            料金・保険のしくみを詳しく見る
-            <span>→</span>
-          </Link>
-        </div>
+        <img src="/syoseki.jpg" alt="写真掲載" className="w-full h-auto object-contain border border-primary-200 mt-16 max-w-3xl mx-auto" />
 
-        {/* Bottom CTA */}
-        <div className="mt-14 bg-primary-700 text-white rounded-md p-8 sm:p-10 text-center">
-          <p className="text-xl sm:text-2xl font-serif font-bold mb-3">
-            まずは無料体験で、お試しください
-          </p>
-          <p className="text-sm sm:text-base text-primary-100 mb-7 leading-relaxed">
-            実際にスタッフが伺い、施術を体験していただけます。<br className="hidden sm:block" />
-            体験のみでも結構です。ご家族からのお申込みもお気軽にどうぞ。
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <a href="#trial-form" className="btn-primary bg-white text-primary-700 hover:bg-primary-50 text-lg py-4 px-8">
-              無料体験を申し込む
-            </a>
-            <a href="tel:086-238-1733" className="btn-tel text-lg py-4 px-8">
-              086-238-1733へ電話
-            </a>
+        {/* ご利用者様の声（1件） */}
+        <div className="mt-16 sm:mt-20 max-w-5xl mx-auto">
+          <div className="mb-8 text-center">
+            <p className="section-lead">VOICE</p>
+            <h3 className="text-2xl sm:text-3xl font-serif font-bold text-gray-800">
+              ご利用者様の声
+            </h3>
+          </div>
+
+          <article className="bg-white border border-cream-200 rounded-md overflow-hidden shadow-sm">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-0">
+              {/* 手紙の写真 */}
+              <div className="lg:col-span-5 bg-cream-100 flex items-center justify-center p-6 sm:p-8">
+                <div className="relative w-full max-w-md">
+                  <div className="absolute -top-2 -left-2 w-full h-full bg-primary-100 rounded-sm rotate-[-2deg]" />
+                  <img
+                    src={testimonial.image}
+                    alt={`${testimonial.author}様からのお手紙`}
+                    className="relative w-full h-auto rounded-sm border border-cream-200 shadow-md"
+                    onError={(e) => {
+                      e.currentTarget.style.display = 'none'
+                      e.currentTarget.nextElementSibling.style.display = 'flex'
+                    }}
+                  />
+                  <div className="hidden relative w-full aspect-[3/4] bg-cream-50 border-2 border-dashed border-cream-200 rounded-sm items-center justify-center">
+                    <p className="text-sm text-gray-400">手紙の写真</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* テキスト */}
+              <div className="lg:col-span-7 p-6 sm:p-8 lg:p-10 flex flex-col justify-center">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="text-xs font-bold text-primary-700 tracking-wider">
+                    VOICE 01
+                  </span>
+                  <span className="h-px flex-1 bg-cream-200" />
+                </div>
+
+                <h4 className="text-xl sm:text-2xl font-serif font-bold text-gray-800 mb-5 leading-snug">
+                  「{testimonial.title}」
+                </h4>
+
+                <div className="border-l-4 border-primary-300 pl-5 mb-6">
+                  <p className="text-base sm:text-lg text-gray-700 leading-loose">
+                    {testimonial.text}
+                  </p>
+                </div>
+
+                <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-gray-600 pt-4 border-t border-cream-200">
+                  <span className="font-bold text-gray-800">{testimonial.author}</span>
+                  <span className="text-gray-400">／</span>
+                  <span>{testimonial.relation}</span>
+                  <span className="text-gray-400">／</span>
+                  <span>{testimonial.area}</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <div className="mt-8 text-center">
+            <Link
+              to="/voice"
+              
+              className="inline-flex items-center gap-2 text-base text-primary-700 hover:text-primary-800 font-bold underline underline-offset-4"
+            >
+              他のご利用者様の声を見る
+              <span>→</span>
+            </Link>
           </div>
         </div>
       </div>
