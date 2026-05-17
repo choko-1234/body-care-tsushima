@@ -1,7 +1,7 @@
 import {useState} from 'react'
 
 export default function FloatingButtons() {
-  const [showNote, setShowNote] = useState(false);
+  
   
   return (
     <div className="fixed bottom-5 right-4 z-40 flex flex-col gap-3">
@@ -15,18 +15,9 @@ export default function FloatingButtons() {
         </svg>
       </a> */}
 
-      {showNote && (
-        <div className="absolute bottom-16 right-0 w-48 bg-white border border-gray-300 rounded-md shadow-lg p-3 text-sm text-gray-700">
-          施術中や車での移動中は<br />
-          電話に出られないことがあります。<br />
-          <br />
-          その際は、留守番電話にメッセージを残していただければ折り返しお電話させていただきます。
-        </div>
-      )}
+      
 
       <a
-        onMouseEnter={() => setShowNote(true)}
-        onMouseLeave={() => setShowNote(false)}
         href="tel:086-238-1733"
         className="flex items-center justify-center w-14 h-14 bg-amber-600 hover:bg-amber-700 text-white rounded-full shadow-lg transition-colors"
         aria-label="電話で問い合わせ"

@@ -7,6 +7,9 @@ import FAQPage from './pages/FAQPage'
 import ContactPage from './pages/ContactPage'
 import CareMgrPage from './pages/CareMgrPage'
 import VoicePage from './pages/VoicePage'
+import FirstTimePage from './pages/FirstTimePage'
+import ServicePage from './pages/ServicePage'
+import InsuranceStandardsPage from './pages/InsuranceStandardsPage'
 import { useEffect } from 'react'
 
 
@@ -35,6 +38,9 @@ export default function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/care-manager" element={<CareMgrPage />} />
         <Route path="/voice" element={<VoicePage />} />
+        <Route path="/first-time" element={<FirstTimePage />} />
+        <Route path="/service" element={<ServicePage />} />
+        <Route path="/insurance-standards" element={<InsuranceStandardsPage />} />
       </Routes>
     </BrowserRouter>
   )

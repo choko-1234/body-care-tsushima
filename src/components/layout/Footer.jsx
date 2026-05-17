@@ -1,9 +1,38 @@
 import { Link } from 'react-router-dom'
 
+const relatedLinks = [
+  { label: '初めての方へ', to: '/first-time' },
+  { label: '施術内容', to: '/service' },
+  { label: '訪問マッサージ治療の実際の流れ', to: '/flow' },
+  { label: 'ケアマネージャー・訪問看護師・医療ソーシャルワーカーの皆様へ', to: '/care-manager' },
+  { label: '施術の保険取り扱い基準について', to: '/insurance-standards' },
+  { label: 'よくあるご質問', to: '/faq' },
+]
+
 export default function Footer() {
   return (
-    <footer className="bg-primary-800 text-primary-100 mt-16">
-      <div className="section-container py-14">
+    <>
+      <section className="bg-cream-50 border-t border-cream-200 mt-16" aria-label="関連ページ">
+        <div className="section-container py-10 sm:py-12">
+          <p className="text-2xl font-bold text-gray-500 tracking-widest mb-5 text-center">RELATED PAGES</p>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 max-w-3xl mx-auto">
+            {relatedLinks.map((l) => (
+              <li key={l.to}>
+                <Link
+                  to={l.to}
+                  className="flex items-center gap-2 px-4 py-3 bg-white border border-cream-200 rounded-md text-base text-gray-700 hover:border-primary-300 hover:text-primary-700 transition-colors"
+                >
+                  <span className="text-primary-600 shrink-0">▸</span>
+                  <span className="leading-snug">{l.label}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <footer className="bg-primary-800 text-primary-100">
+        <div className="section-container py-14">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div className="md:col-span-1">
             <div className="flex items-center gap-3 mb-4">
@@ -70,5 +99,6 @@ export default function Footer() {
         </div>
       </div>
     </footer>
+    </>
   )
 }

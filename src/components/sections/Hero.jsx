@@ -40,6 +40,13 @@ export default function Hero() {
               </a>
             </div>
 
+            <p className="text-lg text-gray-500 gap-1 mb-6">
+              ※施術中や車での移動中は電話に出られないことがあります。<br />
+              その際は、留守番電話にメッセージを残していただければ折り返しお電話させていただきます。
+            </p>
+
+            
+
             <p className="text-lg text-gray-500">
               受付時間　月〜金　9:00〜18:00（土・日定休日　祝日は基本的に通常営業）
             </p>
