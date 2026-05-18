@@ -26,6 +26,33 @@ const steps = [
   },
 ]
 
+const treatmentSteps = [
+  {
+    no: '01',
+    title: '訪問(ご自宅、あるいは老人ホーム等)',
+    detail: '正式にスタートさせていただく場合には、事前にご相談の上、決定させていただいた訪問曜日・時間にお伺いいたします。',
+  },
+  {
+    no: '02',
+    title: 'バイタルチェック及び体調や主訴の確認',
+    detail: 'マッサージ施術の前に、簡単なバイタルチェック（体温・脈拍・血圧等の確認）、ならびに当日の体の状態（痛みやしびれ等の訴えなど。）を確認させていただきます。'
+  },
+  {
+    no: '03',
+    title: '施術開始',
+    detail: 'バイタルチェックで特に問題が無いと確認出来れば、マッサージ施術を開始いたします。施術時間は、大体３０分が目安です。（当日の体調次第では、施術時間に多少の変動があります。)'
+  },
+  {
+    no: '04',
+    title: '次回訪問日時の再確認',
+    detail: '施術終了後、必ず次回の訪問曜日・時間の再確認をいたします。もし、外出するなどの予定がある場合はその旨をお知らせ下さい。施術中止、あるいは訪問日時の変更などの調整をさせていただきます。'
+  },
+  {
+    no: '05',
+    title: 'お疲れ様でした。ありがとうございました。'
+  },
+]
+
 export default function HowToUse() {
   return (
     <section className="py-14 sm:py-20 bg-white">
@@ -52,12 +79,34 @@ export default function HowToUse() {
           ))}
         </ol>
 
-        <div className="mt-8 bg-amber-50 border border-amber-300 rounded-md p-5 sm:p-6">
+        <div className="mt-8 bg-amber-50 border border-amber-300 rounded-md p-5 sm:p-6 mb-20">
           <p className="text-base text-amber-900 leading-relaxed">
             <strong className="block mb-1">医師の同意書について</strong>
             訪問マッサージを医療保険で受けるには、医師の同意書が必要です。
             書類のご用意から、かかりつけ医への説明まで、当院がしっかりサポートしますので、ご安心ください。
           </p>
+        </div>
+
+        <div className="mb-10">
+          <p className="section-lead">FLOW</p>
+          <h2 className="section-title">訪問マッサージ治療の実際の流れ</h2>
+          <p className="text-base text-gray-600 leading-relaxed 下余白 mb-12">
+            お問い合わせから施術スタートまで、おおむね1〜2週間ほどです。(ここ修正予定)
+          </p>
+
+          <ol className="space-y-4">
+          {treatmentSteps.map((s) => (
+            <li key={s.no} className="bg-cream-50 border border-cream-200 rounded-md p-5 sm:p-6 flex items-start gap-5">
+              <div className="shrink-0 w-14 h-14 sm:w-16 sm:h-16 bg-primary-700 text-white flex items-center justify-center font-serif">
+                <span className="text-2xl sm:text-3xl font-bold">{s.no}</span>
+              </div>
+              <div className="pt-1">
+                <h3 className="text-lg sm:text-xl font-serif font-bold text-gray-800 mb-2">{s.title}</h3>
+                <p className="text-base text-gray-700 leading-relaxed">{s.detail}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
         </div>
       </div>
     </section>
