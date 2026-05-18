@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 const relatedLinks = [
   { label: '初めての方へ', to: '/first-time' },
-  { label: '施術内容', to: '/service' },
+  { label: '施術のポイント', to: '/service' },
   { label: '訪問マッサージ治療の実際の流れ', to: '/flow' },
   { label: 'ケアマネージャー・訪問看護師・医療ソーシャルワーカーの皆様へ', to: '/care-manager' },
   { label: '施術の保険取り扱い基準について', to: '/insurance-standards' },
