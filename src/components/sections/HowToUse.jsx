@@ -88,8 +88,8 @@ export default function HowToUse() {
         </div>
 
         <div className="mb-10">
-          <p className="section-lead">FLOW</p>
-          <h2 className="section-title">訪問マッサージ治療の実際の流れ</h2>
+          <p className="section-lead">TREATMENT</p>
+          <h2 className="section-title">訪問マッサージ施術の実際の流れ</h2>
           <p className="text-base text-gray-600 leading-relaxed 下余白 mb-12">
             お問い合わせから施術スタートまで、おおむね1〜2週間ほどです。(ここ修正予定)
           </p>
@@ -97,7 +97,7 @@ export default function HowToUse() {
           <ol className="space-y-4">
           {treatmentSteps.map((s) => (
             <li key={s.no} className="bg-cream-50 border border-cream-200 rounded-md p-5 sm:p-6 flex items-start gap-5">
-              <div className="shrink-0 w-14 h-14 sm:w-16 sm:h-16 bg-primary-700 text-white flex items-center justify-center font-serif">
+              <div className="shrink-0 w-14 h-14 sm:w-16 sm:h-16 bg-amber-800 text-white flex items-center justify-center font-serif">
                 <span className="text-2xl sm:text-3xl font-bold">{s.no}</span>
               </div>
               <div className="pt-1">

@@ -2,6 +2,7 @@ import Header from '../components/layout/Header'
 import Footer from '../components/layout/Footer'
 import FloatingButtons from '../components/layout/FloatingButtons'
 import FAQ from '../components/sections/FAQ'
+import { Link } from 'react-router-dom'
 
 export default function FAQPage() {
   return (
@@ -19,6 +20,12 @@ export default function FAQPage() {
         </div>
         <FAQ />
       </main>
+      <div className="bg-cream-100 py-5 text-center border-t border-cream-200">
+        <Link to="/" className="text-sm text-primary-700 hover:underline font-medium">
+          ← トップページへ戻る
+        </Link>
+      </div>
+      
       <Footer />
       <FloatingButtons />
     </div>

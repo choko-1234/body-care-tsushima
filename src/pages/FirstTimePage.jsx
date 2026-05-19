@@ -147,7 +147,7 @@ export default function FirstTimePage() {
             <div className="text-center mb-10">
               <p className="text-sm text-primary-600 font-bold mb-2 tracking-wider">ABOUT</p>
               <h3 className="text-3xl font-serif font-bold text-gray-800">
-                訪問マッサージとは？
+                訪問マッサージとは？(ここに画像入れたいと思うがどうだろう)
               </h3>
               <div className="w-12 h-0.5 bg-primary-300 mx-auto mt-4"></div>
             </div>
@@ -164,7 +164,7 @@ export default function FirstTimePage() {
             <div className="text-center mb-10">
               <p className="text-sm text-primary-600 font-bold mb-2 tracking-wider">TARGET</p>
               <h3 className="text-3xl font-serif font-bold text-gray-800">
-                対象者について
+                対象者について(ここも画像入れる？)
               </h3>
               <div className="w-12 h-0.5 bg-primary-300 mx-auto mt-4"></div>
             </div>
@@ -280,7 +280,9 @@ export default function FirstTimePage() {
               <div className="w-12 h-0.5 bg-primary-300 mx-auto mt-4"></div>
             </div>
             <p>
-              ご自宅にお伺いして実際に施術をさせていただくのは、「はり師」・「きゅう師」・「按摩マッサージ指圧師」（一般的に、この３つを総称して「鍼灸マッサージ師」といいます。）という国家資格を持った者が担当させていただきます。
+              ご自宅にお伺いして実際に施術をさせていただくのは、「はり師」・「きゅう師」・「按摩マッサージ指圧師」（一般的に、この３つを総称して「鍼灸マッサージ師」といいます。）という国家資格を持った者が担当させていただきます。<br />
+              <br />
+              <Link to="/profile" className="text-primary-700 hover:underline">⚫️ 院長のプロフィールを見る</Link>
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
               <div className="space-y-2">

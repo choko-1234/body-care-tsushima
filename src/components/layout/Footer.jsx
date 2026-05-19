@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom'
 
 const relatedLinks = [
-  { label: '初めての方へ', to: '/first-time' },
+  { label: '当院について', to: '/staff' },
   { label: '施術のポイント', to: '/service' },
-  { label: '訪問マッサージ治療の実際の流れ', to: '/flow' },
-  { label: 'ケアマネージャー・訪問看護師・医療ソーシャルワーカーの皆様へ', to: '/care-manager' },
-  { label: '施術の保険取り扱い基準について', to: '/insurance-standards' },
-  { label: 'よくあるご質問', to: '/faq' },
+  { label: '訪問マッサージ施術の実際の流れ', to: '/flow' },
+  { label: 'ケアマネージャー様へ', to: '/care-manager' },
+  { label: '院長プロフィール', to: '/profile' },
+  { label: 'ここ何か追加する？', to: '/'},
 ]
 
 export default function Footer() {
@@ -54,12 +54,12 @@ export default function Footer() {
             <h3 className="text-white font-bold mb-4 text-sm border-b border-primary-700 pb-2">サイトメニュー</h3>
             <ul className="space-y-2.5 text-sm">
               {[
-                { label: '当院について', to: '/staff' },
-                { label: '料金・保険について', to: '/price' },
-                { label: 'ご利用の流れ', to: '/flow' },
+                { label: '初めての方へ', to: '/first-time' },
+                { label: '料金', to: '/price' },
+                { label: '保険', to: '/insurance-standards' },
                 { label: 'よくあるご質問', to: '/faq' },
                 { label: 'お問い合わせ', to: '/contact' },
-                { label: 'ケアマネジャー様へ', to: '/care-manager' },
+                { label: 'お試し無料体験', to: '/trial' },
               ].map((l) => (
                 <li key={l.to}>
                   <Link to={l.to} className="text-primary-200 hover:text-white transition-colors">
@@ -83,8 +83,8 @@ export default function Footer() {
               </p>
               <p>
                 受付　月〜金 9:00〜18:00<br />
-                定休　日曜・祝日<br />
-                <span className="text-xs">（土曜は事前予約のみ）</span>
+                定休　土曜・日曜<br />
+                <span className="text-xs">（祝日は基本的に通常営業）</span>
               </p>
             </div>
           </div>
@@ -93,8 +93,8 @@ export default function Footer() {
         <div className="border-t border-primary-700 mt-10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-primary-300">
           <p>© ボディケアつしま All rights reserved.</p>
           <div className="flex gap-5">
-            <Link to="/contact" className="hover:text-white">プライバシーポリシー</Link>
-            <Link to="/contact" className="hover:text-white">法令遵守方針</Link>
+            <Link to="/privacy-policy" className="hover:text-white">プライバシーポリシー</Link>
+            
           </div>
         </div>
       </div>

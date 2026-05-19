@@ -1,5 +1,7 @@
 import {useState} from 'react';
-
+import Header from '../components/layout/Header';
+import Footer from '../components/layout/Footer';
+import { Link } from 'react-router-dom'
 export default function TrialForm() {
 
   const [trialData, setTrialData] = useState({
@@ -34,14 +36,25 @@ export default function TrialForm() {
   };
 
   return (
-    <section id="trial-form" className="py-14 sm:py-20 bg-cream-100 border-t border-cream-200">
-      <div className="section-container">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
-          {/* Left description */}
-          <div className="lg:col-span-5">
+    <div>
+      <Header />
+      <div className="bg-primary-800 text-white py-12 sm:py-16">
+          <div className="section-container">
+            <p className="text-sm text-primary-200 font-bold mb-3 tracking-wider">FREE TRIAL</p>
+            <h1 className="text-3xl sm:text-4xl font-serif font-bold">無料体験のお申し込み</h1>
+            <p className="text-base text-primary-100 mt-3 leading-relaxed">
+              訪問マッサージを「合うかどうか試してから決めたい」という方のために。
+            </p>
+          </div>
+        </div>
+      <section id="trial-form" className="py-14 sm:py-20 bg-cream-100 border-t border-cream-200">
+        <div className="section-container">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
+            {/* Left description */}
+            <div className="lg:col-span-5">
             <p className="section-lead">FREE TRIAL</p>
             <h2 className="section-title mb-5">無料体験のお申し込み</h2>
-            <h2 className="section-subtitle mb-5" style={{ color: 'red' }}>毎月2名様限定</h2>
+            <h2 className="section-subtitle mb-5 text-red-500 text-lg">毎月2名様限定</h2>
             <p className="text-base text-gray-700 leading-relaxed mb-6">
               訪問マッサージを「合うかどうか試してから決めたい」という方のために、
               無料の体験施術を行っています。<br />
@@ -54,7 +67,7 @@ export default function TrialForm() {
               </div>
               <div>
                 <dt className="font-bold text-gray-800">受付時間</dt>
-                <dd>月〜金　9:00〜18:00（日祝定休／土曜は予約のみ）</dd>
+                <dd>月〜金　9:00〜18:00（土日定休／祝日は基本通常営業）</dd>
               </div>
               <div>
                 <dt className="font-bold text-gray-800">お返事まで</dt>
@@ -198,5 +211,12 @@ export default function TrialForm() {
         </div>
       </div>
     </section>
+    <div className="bg-cream-100 py-5 text-center border-t border-cream-200">
+        <Link to="/" className="text-sm text-primary-700 hover:underline font-medium">
+          ← トップページへ戻る
+        </Link>
+    </div>
+    <Footer />
+    </div>
   )
 }

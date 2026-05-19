@@ -2,14 +2,13 @@ import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
 const navLinks = [
-  { label: '当院について', to: '/staff' },
-  { label: '料金・保険', to: '/price' },
-  { label: 'ご利用の流れ', to: '/flow' },
+  { label: '初めての方へ', to: '/first-time' },
+  { label: '料金', to: '/price' },
+  { label: '保険', to: '/insurance-standards' },
   { label: 'お客様の声', to: '/voice' },
   { label: 'よくあるご質問', to: '/faq' },
   { label: 'お問い合わせ', to: '/contact' },
-  { label: 'ケアマネ様へ', to: '/care-manager' },
-  
+  { label: 'お試し無料体験', to: '/trial' },
 ]
 
 export default function Header() {
@@ -37,7 +36,7 @@ export default function Header() {
             </div>
             <div>
               
-              <p className="text-[17px] font-bold text-gray-800 leading-none font-serif">
+              <p className="text-base [17px] font-bold text-gray-800 leading-none font-serif">
                 ボディケア<br />つしま
               </p>
              
@@ -50,7 +49,7 @@ export default function Header() {
               <Link
                 key={link.to}
                 to={link.to}
-                className={`text-sm px-2 py-2 font-medium transition-colors whitespace-nowrap ${
+                className={`text-m px-2 py-2 font-medium transition-colors whitespace-nowrap ${
                   pathname === link.to
                     ? 'text-primary-700 border-b-2 border-primary-600'
                     : 'text-gray-600 hover:text-primary-700'

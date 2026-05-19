@@ -10,6 +10,9 @@ import VoicePage from './pages/VoicePage'
 import FirstTimePage from './pages/FirstTimePage'
 import ServicePage from './pages/ServicePage'
 import InsuranceStandardsPage from './pages/InsuranceStandardsPage'
+import TrialForm from './pages/TrialForm'
+import ProfilePage from './pages/ProfilePage'
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage'
 import { useEffect } from 'react'
 
 
@@ -41,6 +44,9 @@ export default function App() {
         <Route path="/first-time" element={<FirstTimePage />} />
         <Route path="/service" element={<ServicePage />} />
         <Route path="/insurance-standards" element={<InsuranceStandardsPage />} />
+        <Route path="/trial" element={<TrialForm />} />
+        <Route path="/profile" element={<ProfilePage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
       </Routes>
     </BrowserRouter>
   )

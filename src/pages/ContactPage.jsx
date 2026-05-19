@@ -3,7 +3,7 @@ import Footer from '../components/layout/Footer'
 import FloatingButtons from '../components/layout/FloatingButtons'
 import ContactForm from '../components/sections/ContactForm'
 import Compliance from '../components/sections/Compliance'
-
+import { Link } from 'react-router-dom'
 export default function ContactPage() {
   return (
     <div className="min-h-screen">
@@ -21,6 +21,11 @@ export default function ContactPage() {
         <ContactForm />
         <Compliance />
       </main>
+      <div className="bg-cream-100 py-5 text-center border-t border-cream-200">
+        <Link to="/" className="text-sm text-primary-700 hover:underline font-medium">
+          ← トップページへ戻る
+        </Link>
+      </div>
       <Footer />
       <FloatingButtons />
     </div>

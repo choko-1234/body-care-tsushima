@@ -9,7 +9,7 @@ const letters = [
     image: '/voices/letter-1.jpg',
     title: '感謝の毎日を過ごしております',
     text: '訪問して下さる方は、実直で熱心なお人柄ですので、御親切にご指導していただいております。感謝の毎日を過ごしております。一人暮らしの老人で、分からない事がありましたらすぐに対処して下さるし、私のつまらない愚痴や悩みも話しますので、心が癒えて大変助かっております。良いお方にお世話になり、喜んでおります。よろしくお願い申し上げます。',
-    author: '70代女性',
+    author: '80代女性',
     relation: 'ご本人より',
     area: '岡山市北区',
   },
@@ -150,7 +150,7 @@ export default function VoicePage() {
                 ご本人が動かれなくても、ご家族からのお申込みで結構です。
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                <Link to="/contact" className="btn-primary bg-white text-primary-700 hover:bg-primary-50 text-lg py-4 px-8">
+                <Link to="/trial" className="btn-primary bg-white text-primary-700 hover:bg-primary-50 text-lg py-4 px-8">
                   無料体験を申し込む
                 </Link>
                 <a href="tel:086-238-1733" className="btn-tel text-lg py-4 px-8">

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Header from '../components/layout/Header'
 import Footer from '../components/layout/Footer'
 import FloatingButtons from '../components/layout/FloatingButtons'
@@ -11,16 +12,21 @@ export default function PricePage() {
       <main>
         <div className="bg-primary-800 text-white py-12 sm:py-16">
           <div className="section-container">
-            <p className="text-sm text-primary-200 font-bold mb-3 tracking-wider">PRICE & INSURANCE</p>
-            <h1 className="text-3xl sm:text-4xl font-serif font-bold">料金・保険について</h1>
+            <p className="text-sm text-primary-200 font-bold mb-3 tracking-wider">PRICE</p>
+            <h1 className="text-3xl sm:text-4xl font-serif font-bold">料金について</h1>
             <p className="text-base text-primary-100 mt-3 leading-relaxed">
-              医療保険が使えるかどうかと、おおよその自己負担額をご確認いただけます。
+              施術費用と、おおよその自己負担額をご確認いただけます。
             </p>
           </div>
         </div>
         <InsuranceCheck />
         <PriceSimulator />
       </main>
+      <div className="bg-cream-100 py-5 text-center border-t border-cream-200">
+        <Link to="/" className="text-sm text-primary-700 hover:underline font-medium">
+          ← トップページへ戻る
+        </Link>
+      </div>
       <Footer />
       <FloatingButtons />
     </div>
