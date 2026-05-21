@@ -147,9 +147,10 @@ export default function FirstTimePage() {
             <div className="text-center mb-10">
               <p className="text-sm text-primary-600 font-bold mb-2 tracking-wider">ABOUT</p>
               <h3 className="text-3xl font-serif font-bold text-gray-800">
-                訪問マッサージとは？(ここに画像入れたいと思うがどうだろう)
+                訪問マッサージとは？
               </h3>
               <div className="w-12 h-0.5 bg-primary-300 mx-auto mt-4"></div>
+              <img src="/treatment.jpg" alt="訪問マッサージのイメージ" className="rounded-md mt-6 transition-opacity mx-auto mix-blend-multiply" />
             </div>
             <p>
               この訪問マッサージは、別名 「訪問医療マッサージ」というもので、介護保険ではなく、医療保険（健康保険）を適用して、ご自宅あるいは有料老人ホームなどの介護施設にお伺いして、ご提供させていただくサービスです。
@@ -164,9 +165,10 @@ export default function FirstTimePage() {
             <div className="text-center mb-10">
               <p className="text-sm text-primary-600 font-bold mb-2 tracking-wider">TARGET</p>
               <h3 className="text-3xl font-serif font-bold text-gray-800">
-                対象者について(ここも画像入れる？)
+                対象者について
               </h3>
               <div className="w-12 h-0.5 bg-primary-300 mx-auto mt-4"></div>
+              <img src="/elderly_people.jpg" alt="対象者のイメージ" className="rounded-md mt-6 transition-opacity mx-auto h-64 mix-blend-multiply" />
             </div>
             <p>
               病名（診断名）に関係なく、医師がマッサージの効果ありと認めた方が対象となりますが、具体的には、主に脳梗塞（脳出血）後遺症、あるいはパーキンソン病や脊髄損傷などが原因で筋肉に麻痺や萎縮（固縮）の症状がある、あるいは関節の拘縮（関節が固くなって動かしにく状態）がある方で、同時に歩行困難な方が対象です。

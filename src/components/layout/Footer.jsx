@@ -52,7 +52,7 @@ export default function Footer() {
 
           <div>
             <h3 className="text-white font-bold mb-4 text-sm border-b border-primary-700 pb-2">サイトメニュー</h3>
-            <ul className="space-y-2.5 text-sm">
+            <ul className="grid grid-cols-2 gap-x-4 gap-y-2.5 text-sm">
               {[
                 { label: '初めての方へ', to: '/first-time' },
                 { label: '料金', to: '/price' },
@@ -60,7 +60,14 @@ export default function Footer() {
                 { label: 'よくあるご質問', to: '/faq' },
                 { label: 'お問い合わせ', to: '/contact' },
                 { label: 'お試し無料体験', to: '/trial' },
+                { label: '当院について', to: '/staff' },
+                { label: '施術のポイント', to: '/service' },
+                { label: '訪問マッサージ施術の実際の流れ', to: '/flow' },
+                { label: 'ケアマネージャー様へ', to: '/care-manager' },
+                { label: '院長プロフィール', to: '/profile' },
               ].map((l) => (
+                
+
                 <li key={l.to}>
                   <Link to={l.to} className="text-primary-200 hover:text-white transition-colors">
                     {l.label}
