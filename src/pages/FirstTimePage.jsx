@@ -3,6 +3,7 @@ import Header from '../components/layout/Header'
 import Footer from '../components/layout/Footer'
 import FloatingButtons from '../components/layout/FloatingButtons'
 import {useState} from 'react'
+import InsuranceCheck from '../components/sections/InsuranceCheck'
 
 const achivements = [
   {
@@ -189,7 +190,7 @@ export default function FirstTimePage() {
               <p className="mt-3">といった理由に該当するかどうかで判断されます。</p>
             </div>
           </div>
-
+          <InsuranceCheck />
           {/* ブロック3: 施術実績 */}
           <div className="space-y-4">
             <div className="text-center mb-10">

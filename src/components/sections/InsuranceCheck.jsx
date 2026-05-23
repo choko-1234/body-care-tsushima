@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const questions = [
   {
@@ -113,9 +114,9 @@ export default function InsuranceCheck() {
                 {result.body}
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
-                <a href="#trial-form" className="btn-primary flex-1 py-4 text-base">
+                <Link to="/trial "className="btn-primary flex-1 py-4 text-base">
                   無料体験に申し込む
-                </a>
+                </Link>
                 <a href="tel:086-238-1733" className="btn-tel flex-1 py-4 text-base">
                   電話で相談する
                 </a>
