@@ -31,12 +31,6 @@ const items = [
   },
 ]
 
-const documents = [
-  { title: 'マッサージ用 同意書（雛形）', file: 'agreement-massage.pdf' },
-  { title: 'はり・きゅう用 同意書（雛形）', file: 'agreement-acupuncture.pdf' },
-  { title: 'ケアマネ様向け サービス案内', file: 'service-overview.pdf' },
-  { title: '訪問可能エリア一覧', file: 'service-area.pdf' },
-]
 
 export default function CareMgrPage() {
   return (
@@ -90,35 +84,7 @@ export default function CareMgrPage() {
           </div>
         </section>
 
-        {/* Documents */}
-        <section className="py-14 sm:py-20 bg-cream-50 border-y border-cream-200">
-          <div className="section-container">
-            <div className="mb-10">
-              <p className="section-lead">DOWNLOADS</p>
-              <h2 className="section-title">書類ダウンロード(これいる？)</h2>
-              <p className="text-base text-gray-600 leading-relaxed">
-                同意書の雛形やサービス案内をPDFでダウンロードいただけます。
-              </p>
-            </div>
-
-            <ul className="bg-white border border-gray-200 rounded-md divide-y divide-gray-200">
-              {documents.map((d) => (
-                <li key={d.file} className="flex items-center justify-between px-5 py-4 sm:px-7 sm:py-5">
-                  <div>
-                    <p className="text-base sm:text-lg font-bold text-gray-800">{d.title}</p>
-                    <p className="text-xs text-gray-500 mt-0.5">PDF / {d.file}</p>
-                  </div>
-                  <button
-                    onClick={() => alert('PDFのURL（Supabase Storage等）に差し替えます')}
-                    className="btn-outline py-2.5 px-5 text-sm"
-                  >
-                    ダウンロード
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
+        
 
         {/* Contact */}
         <section className="py-14 sm:py-20 bg-white">

@@ -150,7 +150,7 @@ export default function PriceSimulator() {
                 1回あたりの自己負担（{burden}割）
               </p>
               <p className="text-4xl sm:text-5xl font-serif font-bold">
-                約 {total.toLocaleString()}
+                 {total.toLocaleString()}
                 <span className="text-xl font-normal ml-1">円</span>
               </p>
               <p className="text-xs text-primary-200 mt-3 leading-relaxed">

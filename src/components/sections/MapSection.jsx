@@ -70,7 +70,6 @@ export default function MapSection() {
               </ul>
               <p className="text-sm text-gray-500 mt-3 leading-relaxed">
                 上記以外の地域もご相談ください。<br />
-                距離によっては交通費を別途いただく場合があります。
               </p>
             </div>
           </div>
