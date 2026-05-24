@@ -6,7 +6,7 @@ const relatedLinks = [
   { label: '訪問マッサージ施術の実際の流れ', to: '/flow' },
   { label: 'ケアマネージャー様へ', to: '/care-manager' },
   { label: '院長プロフィール', to: '/profile' },
-  { label: 'ここ何か追加する？', to: '/'},
+  { label: '準備中', to: '/'},
 ]
 
 export default function Footer() {

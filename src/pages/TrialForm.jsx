@@ -9,16 +9,13 @@ export default function TrialForm() {
       relation: '',
       phone: '',
       email: '',
-      address: '',
-      date: '',
-      time: '',
       category: '無料体験',
       message: '',
    })
 
   const handleSubmit = async (e) => {
       e.preventDefault();
-      if (!trialData.name || !trialData.phone || !trialData.email || !trialData.address) {
+      if (!trialData.name || !trialData.phone || !trialData.email) {
         alert('必須項目を入力してください');
         return;
       }
@@ -138,42 +135,6 @@ export default function TrialForm() {
                 />
               </div>
 
-              <div>
-                <label className="block text-sm font-bold text-gray-700 mb-1.5">
-                  ご住所（訪問先）　<span className="text-red-600 text-xs">必須</span>
-                </label>
-                <input
-                  type="text"
-                  value={trialData.address}
-                  onChange={(e) => setTrialData({...trialData, address: e.target.value})}
-                  placeholder="例：岡山市北区津島新野1-3-16-1"
-                  className="w-full border border-gray-300 rounded px-4 py-3 text-base focus:outline-none focus:border-primary-500"
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-bold text-gray-700 mb-1.5">
-                  ご希望日・時間帯
-                </label>
-                <div className="grid grid-cols-2 gap-3">
-                  <input
-                    type="date"
-                    value={trialData.date}
-                    onChange={(e) => setTrialData({...trialData, date: e.target.value})}
-                    className="border border-gray-300 rounded px-4 py-3 text-base focus:outline-none focus:border-primary-500"
-                  />
-                  <select
-                    value={trialData.time}
-                    onChange={(e) => setTrialData({...trialData, time: e.target.value})}
-                    className="border border-gray-300 rounded px-4 py-3 text-base focus:outline-none focus:border-primary-500 bg-white"
-                  >
-                    <option value="">時間帯を選択</option>
-                    <option>午前（9:00〜12:00）</option>
-                    <option>午後（13:00〜17:00）</option>
-                    <option>どちらでも可</option>
-                  </select>
-                </div>
-              </div>
 
               <div>
                 <label className="block text-sm font-bold text-gray-700 mb-1.5">

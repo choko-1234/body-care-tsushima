@@ -3,7 +3,7 @@ import Header from '../components/layout/Header'
 import Footer from '../components/layout/Footer'
 import FloatingButtons from '../components/layout/FloatingButtons'
 import StaffGallery from '../components/sections/StaffGallery'
-import PhotoGallery from '../components/sections/PhotoGallery'
+
 import Aim from '../components/sections/Aim'
 export default function StaffPage() {
   return (
@@ -20,7 +20,7 @@ export default function StaffPage() {
           </div>
         </div>
         <StaffGallery />
-        <PhotoGallery />
+        
         <Aim />
       </main>
       <div className="bg-cream-100 py-5 text-center border-t border-cream-200">

@@ -35,7 +35,7 @@ export default function ContactForm() {
           <p className="section-lead">CONTACT</p>
           <h2 className="section-title">お問い合わせ</h2>
           <p className="text-base text-gray-600 leading-relaxed">
-            お電話・LINE・メールフォームでお問い合わせいただけます。<br className="hidden sm:block" />
+            お電話・メールフォームでお問い合わせいただけます。<br className="hidden sm:block" />
             お電話が一番早くつながります。
           </p>
         </div>
@@ -47,13 +47,7 @@ export default function ContactForm() {
             <p className="text-sm text-gray-600 mb-4">月〜金 9:00〜18:00</p>
             <a href="tel:086-238-1733" className="btn-tel w-full py-3 text-base">かける</a>
           </div>
-          <div className="bg-cream-50 border border-cream-200 rounded-md p-6">
-            <p className="text-sm font-bold text-gray-500 mb-2 tracking-wider">LINE</p>
-            <p className="text-base text-gray-700 mb-4 leading-relaxed">
-              ご家族の方も気軽にご相談いただけます。お写真やお話の続きも送れます。
-            </p>
-            <a href="https://lin.ee/XXXXXXX" className="btn-line w-full py-3 text-base">LINEを開く</a>
-          </div>
+          
           <div className="bg-cream-50 border border-cream-200 rounded-md p-6">
             <p className="text-sm font-bold text-gray-500 mb-2 tracking-wider">FAX</p>
             <p className="text-2xl font-serif font-bold text-gray-800 mb-1">086-238-1755</p>

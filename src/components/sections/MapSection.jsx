@@ -18,15 +18,17 @@ export default function MapSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Map */}
           <div>
-            <div className="aspect-[4/3] bg-gray-100 border border-gray-200 flex items-center justify-center">
-              <div className="text-center text-gray-400">
-                <p className="text-sm">Google マップ</p>
-                <p className="text-xs mt-1">埋め込みコードに差し替え</p>
-              </div>
+            <div className="aspect-[4/3] bg-gray-100 border border-gray-200 overflow-hidden rounded-md">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5000.0720568353!2d132.69836425781244!3d34.68291096793206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x355406684efc9c1f%3A0x97a0ba345aeb0a71!2z6Kiq5ZWP44Oe44OD44K144O844K4IOODnOODh-OCo-OCseOCouOBpOOBl-OBvg!5e1!3m2!1sja!2sjp!4v1779610581234!5m2!1sja!2sjp"
+                className="w-full h-full"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="ボディケア津島 所在地"
+              ></iframe>
             </div>
-            <p className="text-xs text-gray-500 mt-2">
-              ※ 実際の埋め込みには iframe（Google Maps Embed API）を使用します
-            </p>
           </div>
 
           {/* Info */}
@@ -54,7 +56,7 @@ export default function MapSection() {
                 </tr>
                 <tr>
                   <th className="bg-cream-50 text-left text-sm font-bold text-gray-700 px-4 py-3 align-top">定休日</th>
-                  <td className="px-4 py-3 text-gray-700">日曜・祝日（土曜は事前予約のみ）</td>
+                  <td className="px-4 py-3 text-gray-700">土曜・日曜（祝日は基本通常営業）</td>
                 </tr>
               </tbody>
             </table>

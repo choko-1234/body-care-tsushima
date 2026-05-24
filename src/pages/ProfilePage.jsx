@@ -21,8 +21,6 @@ const hobbies = [
   { title: '家の掃除', desc: '別に潔癖症ではありませんが、毎週末２〜３時間は平気で掃除をしています。' },
   { title: '家電量販店内散策', desc: 'いろんな家電製品を見るのが好きです。' },
   { title: 'マジック（手品）鑑賞', desc: '見るのも好きですが、少し演じることもできます。' },
-  { title: ' ビール飲み', desc: '1日350mlの缶ビールを4~6本必ず飲みます。'},
-  { title: '息子が優秀すぎて困ってます', desc: '自分よりも素直で真面目な紳二が生まれてきてくれて、毎日感謝しています。' },
 ]
 
 
@@ -65,7 +63,7 @@ export default function ProfilePage() {
               <div className="lg:col-span-8 space-y-6">
                 <div>
                   <p className="text-sm text-primary-700 font-bold tracking-wider mb-1">院長</p>
-                  <h2 className="text-3xl sm:text-4xl font-serif font-bold text-gray-800">高森 直樹</h2>
+                  <h2 className="text-3xl sm:text-4xl font-serif font-bold text-gray-800">高森 直樹(たかもり なおき)</h2>
                 </div>
 
                 <table className="w-full text-base text-gray-700 border-collapse">

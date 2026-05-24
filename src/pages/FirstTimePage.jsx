@@ -283,7 +283,7 @@ export default function FirstTimePage() {
               <div className="w-12 h-0.5 bg-primary-300 mx-auto mt-4"></div>
             </div>
             <p>
-              ご自宅にお伺いして実際に施術をさせていただくのは、「はり師」・「きゅう師」・「按摩マッサージ指圧師」（一般的に、この３つを総称して「鍼灸マッサージ師」といいます。）という国家資格を持った者が担当させていただきます。<br />
+              ご自宅にお伺いして実際に施術をさせていただくのは、「はり師」・「きゅう師」・「按摩マッサージ指圧師」（一般的に、この３つを総称して「鍼灸マッサージ師」といいます。）という<span className="font-bold">国家資格</span>を持った者が担当させていただきます。<br />
               <br />
               <Link to="/profile" className="text-primary-700 hover:underline">⚫️ 院長のプロフィールを見る</Link>
             </p>
