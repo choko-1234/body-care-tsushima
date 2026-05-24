@@ -26,32 +26,7 @@ const steps = [
   },
 ]
 
-const treatmentSteps = [
-  {
-    no: '01',
-    title: '訪問(ご自宅、あるいは老人ホーム等)',
-    detail: '正式にスタートさせていただく場合には、事前にご相談の上、決定させていただいた訪問曜日・時間にお伺いいたします。',
-  },
-  {
-    no: '02',
-    title: 'バイタルチェック及び体調や主訴の確認',
-    detail: 'マッサージ施術の前に、簡単なバイタルチェック（体温・脈拍・血圧等の確認）、ならびに当日の体の状態（痛みやしびれ等の訴えなど。）を確認させていただきます。'
-  },
-  {
-    no: '03',
-    title: '施術開始',
-    detail: 'バイタルチェックで特に問題が無いと確認出来れば、マッサージ施術を開始いたします。施術時間は、大体３０分が目安です。（当日の体調次第では、施術時間に多少の変動があります。)'
-  },
-  {
-    no: '04',
-    title: '次回訪問日時の再確認',
-    detail: '施術終了後、必ず次回の訪問曜日・時間の再確認をいたします。もし、外出するなどの予定がある場合はその旨をお知らせ下さい。施術中止、あるいは訪問日時の変更などの調整をさせていただきます。'
-  },
-  {
-    no: '05',
-    title: 'お疲れ様でした。ありがとうございました。'
-  },
-]
+
 
 export default function HowToUse() {
   return (
@@ -80,27 +55,7 @@ export default function HowToUse() {
         </ol>
 
 
-        <div className="mb-10 mt-10">
-          <p className="section-lead">TREATMENT</p>
-          <h2 className="section-title">訪問マッサージ施術の実際の流れ</h2>
-          <p className="text-base text-gray-600 leading-relaxed 下余白 mb-12">
-            お問い合わせから施術スタートまで、おおむね1〜2週間ほどです。
-          </p>
-
-          <ol className="space-y-4">
-          {treatmentSteps.map((s) => (
-            <li key={s.no} className="bg-cream-50 border border-cream-200 rounded-md p-5 sm:p-6 flex items-start gap-5">
-              <div className="shrink-0 w-14 h-14 sm:w-16 sm:h-16 bg-amber-800 text-white flex items-center justify-center font-serif">
-                <span className="text-2xl sm:text-3xl font-bold">{s.no}</span>
-              </div>
-              <div className="pt-1">
-                <h3 className="text-lg sm:text-xl font-serif font-bold text-gray-800 mb-2">{s.title}</h3>
-                <p className="text-base text-gray-700 leading-relaxed">{s.detail}</p>
-              </div>
-            </li>
-          ))}
-        </ol>
-        </div>
+        
       </div>
     </section>
   )

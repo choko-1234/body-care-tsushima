@@ -16,7 +16,7 @@ export default function ContactForm() {
     alert('お名前・メールアドレス・お問い合わせ内容は必須です。')
     return
   }
-  const res = await fetch('https://formspree.io/f/xykoabol',{
+  const res = await fetch('https://formspree.io/f/xzdwapro',{
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify(formData),

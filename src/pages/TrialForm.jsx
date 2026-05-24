@@ -19,7 +19,7 @@ export default function TrialForm() {
         alert('必須項目を入力してください');
         return;
       }
-      const res = await fetch('https://formspree.io/f/xykoabol',{
+      const res = await fetch('https://formspree.io/f/xzdwapro',{
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(trialData),
