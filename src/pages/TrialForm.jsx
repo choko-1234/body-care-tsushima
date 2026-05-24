@@ -55,7 +55,7 @@ export default function TrialForm() {
             <p className="text-base text-gray-700 leading-relaxed mb-6">
               訪問マッサージを「合うかどうか試してから決めたい」という方のために、
               無料の体験施術を行っています。<br />
-              ご本人が動かれなくても、ご家族からのお申込みで結構です。
+              ご本人が動かれなくても、ご家族様からのお申込みで結構です。
             </p>
             <dl className="space-y-3 text-sm text-gray-700 border-l-2 border-primary-300 pl-4">
               <div>
