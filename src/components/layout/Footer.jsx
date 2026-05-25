@@ -57,6 +57,7 @@ export default function Footer() {
                 { label: '初めての方へ', to: '/first-time' },
                 { label: '料金', to: '/price' },
                 { label: '保険', to: '/insurance-standards' },
+                { label: 'お客様の声', to: '/voice' },
                 { label: 'よくあるご質問', to: '/faq' },
                 { label: 'お問い合わせ', to: '/contact' },
                 { label: 'お試し無料体験', to: '/trial' },
