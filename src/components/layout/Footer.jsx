@@ -62,7 +62,7 @@ export default function Footer() {
                 { label: 'お試し無料体験', to: '/trial' },
                 { label: '当院について', to: '/staff' },
                 { label: '施術のポイント', to: '/service' },
-                { label: '訪問マッサージ施術の実際の流れ', to: '/flow' },
+                { label: '訪問マッサージ施術開始までの実際の流れ', to: '/flow' },
                 { label: 'ケアマネージャー様へ', to: '/care-manager' },
                 { label: '院長プロフィール', to: '/profile' },
               ].map((l) => (

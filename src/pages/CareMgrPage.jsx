@@ -22,7 +22,7 @@ const items = [
   {
     worry: '多職種連携がうまくいくか不安',
     title: 'サービス担当者会議に出席します',
-    body: 'ご要望があればサービス担当者会議にも可能な限り参加させていただきます。施術状況や身体機能の変化をその場でお伝えし、チームケアの一員として連携します。',
+    body: 'ご要望があればサービス担当者会議にも可能な限り参加させていただきます。施術状況や身体機能の変化をその場でお伝えし、ご利用者様の体のケアに関わる一員として連携します。',
   },
   {
     worry: '訪問中に何かあったとき、すぐに連絡してもらえるか不安',
@@ -91,7 +91,7 @@ export default function CareMgrPage() {
           <div className="section-container">
             <div className="bg-primary-700 text-white rounded-md p-8 sm:p-10 text-center">
               <p className="text-xl sm:text-2xl font-serif font-bold mb-3">
-                ご担当のご利用者についてご相談ください
+                ご担当のご利用者様についてご相談ください
               </p>
               <p className="text-sm sm:text-base text-primary-100 mb-6 leading-relaxed">
                 ご相談ベースのお問い合わせも歓迎します。お電話・FAXでお気軽にどうぞ。

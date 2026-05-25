@@ -3,7 +3,6 @@ const areas = [
   '岡山市中区',
   '岡山市東区（一部）',
   '岡山市南区（一部）',
-  '近隣市町村（応相談）',
 ]
 
 export default function MapSection() {
@@ -70,6 +69,7 @@ export default function MapSection() {
               </ul>
               <p className="text-sm text-gray-500 mt-3 leading-relaxed">
                 上記以外の地域もご相談ください。<br />
+                (訪問可能距離は、治療院を中心とした半径16km以内と決められています）
               </p>
             </div>
           </div>
