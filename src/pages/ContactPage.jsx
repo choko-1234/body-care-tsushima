@@ -4,9 +4,15 @@ import FloatingButtons from '../components/layout/FloatingButtons'
 import ContactForm from '../components/sections/ContactForm'
 import Compliance from '../components/sections/Compliance'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
+
 export default function ContactPage() {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>お問い合わせ｜ボディケアつしま</title>
+        <meta name="description" content="岡山市の訪問マッサージ、ボディケアつしまへのお問い合わせはこちらから。訪問エリアや保険適用の可否など、お気軽にご相談ください。" />
+      </Helmet>
       <Header />
       <main>
         <div className="bg-primary-800 text-white py-12 sm:py-16">

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Header from '../components/layout/Header'
 import Footer from '../components/layout/Footer'
 import FloatingButtons from '../components/layout/FloatingButtons'
+import { Helmet } from 'react-helmet-async'
 
 const licenses = [
   { name: 'あん摩マッサージ指圧師', number: '第125275号', image: '/anma.jpg' },
@@ -40,6 +41,10 @@ export default function ProfilePage() {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>院長プロフィール｜ボディケアつしま</title>
+        <meta name="description" content="岡山市の訪問マッサージ、ボディケアつしまの院長プロフィールです。国家資格を有し、訪問マッサージ歴20年の院長が責任を持って施術いたします。" />
+      </Helmet>
       <Header />
       <main>
         {/* ページヘッダー */}

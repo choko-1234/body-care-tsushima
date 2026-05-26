@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import Header from '../components/layout/Header'
 import Footer from '../components/layout/Footer'
 import FloatingButtons from '../components/layout/FloatingButtons'
+import { Helmet } from 'react-helmet-async'
 
 const items = [
   {
@@ -35,6 +36,10 @@ const items = [
 export default function CareMgrPage() {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>ケアマネージャー様へ｜ボディケアつしま</title>
+        <meta name="description" content="岡山市の訪問マッサージ、ボディケアつしまからケアマネージャー様へご案内します。医療保険適用のため介護保険の枠を圧迫しません。ご連携のご相談はお気軽にどうぞ。" />
+      </Helmet>
       <Header />
       <main>
         {/* Page hero */}

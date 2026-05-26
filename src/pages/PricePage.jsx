@@ -5,11 +5,16 @@ import FloatingButtons from '../components/layout/FloatingButtons'
 import BasicPriceTable from '../components/sections/BasicPriceTable'
 import PriceSimulator from '../components/sections/PriceSimulator'
 import InsuranceCategoryInfo from '../components/sections/InsuranceCategoryInfo'
-import InsuranceCheck from '../components/sections/InsuranceCheck'
+import { Helmet } from 'react-helmet-async'
+
 
 export default function PricePage() {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>料金案内｜ボディケアつしま</title>
+        <meta name="description" content="岡山市の訪問マッサージ、ボディケアつしまの料金案内です。医療保険適用で1割負担の方は1回数百円から。実費の場合の料金もご確認いただけます。お気軽にご相談ください。" />
+      </Helmet>
       <Header />
       <main>
         <div className="bg-primary-800 text-white py-12 sm:py-16">

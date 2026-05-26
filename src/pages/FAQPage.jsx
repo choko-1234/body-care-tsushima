@@ -3,10 +3,15 @@ import Footer from '../components/layout/Footer'
 import FloatingButtons from '../components/layout/FloatingButtons'
 import FAQ from '../components/sections/FAQ'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 
 export default function FAQPage() {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>よくあるご質問｜ボディケアつしま</title>
+        <meta name="description" content="岡山市の訪問マッサージに関するよくあるご質問をまとめています。保険の適用条件や料金、施術内容についてご不明な点はこちらをご覧ください。" />
+      </Helmet>
       <Header />
       <main>
         <div className="bg-primary-800 text-white py-12 sm:py-16">

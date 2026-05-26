@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bc-tsushima.com/sitemap.xml

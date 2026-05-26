@@ -2,6 +2,7 @@ import {useState} from 'react';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 export default function TrialForm() {
 
   const [trialData, setTrialData] = useState({
@@ -34,6 +35,10 @@ export default function TrialForm() {
 
   return (
     <div>
+      <Helmet>
+        <title>無料お試し体験のお申し込み｜ボディケアつしま</title>
+        <meta name="description" content="岡山市の訪問マッサージ、ボディケアつしまの無料お試し体験をお申し込みいただけます。毎月2名様限定です。まずはお気軽にどうぞ。" />
+      </Helmet>
       <Header />
       <div className="bg-primary-800 text-white py-12 sm:py-16">
           <div className="section-container">

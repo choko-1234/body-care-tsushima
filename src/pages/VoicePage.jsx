@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import Header from '../components/layout/Header'
 import Footer from '../components/layout/Footer'
 import FloatingButtons from '../components/layout/FloatingButtons'
+import { Helmet } from 'react-helmet-async'
 
 const letters = [
   {
@@ -137,6 +138,10 @@ const letters = [
 export default function VoicePage() {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>お客様の声｜ボディケアつしま</title>
+        <meta name="description" content="岡山市の訪問マッサージ、ボディケアつしまをご利用いただいたお客様からの声をご紹介します。実際の施術を受けた方のリアルなご感想をぜひご覧ください。" />
+      </Helmet>
       <Header />
       <main>
         {/* Page hero */}

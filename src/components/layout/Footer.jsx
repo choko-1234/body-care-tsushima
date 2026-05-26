@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 const relatedLinks = [
   { label: '当院について', to: '/staff' },
   { label: '施術のポイント', to: '/service' },
-  { label: '訪問マッサージ施術の実際の流れ', to: '/flow' },
+  { label: '訪問マッサージ施術開始までの実際の流れ', to: '/flow' },
   { label: 'ケアマネージャー様へ', to: '/care-manager' },
   { label: '院長プロフィール', to: '/profile' },
   { label: '準備中', to: '/'},

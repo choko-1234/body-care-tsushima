@@ -3,11 +3,16 @@ import Header from '../components/layout/Header'
 import Footer from '../components/layout/Footer'
 import FloatingButtons from '../components/layout/FloatingButtons'
 import StaffGallery from '../components/sections/StaffGallery'
-
 import Aim from '../components/sections/Aim'
+import { Helmet } from 'react-helmet-async'
+
 export default function StaffPage() {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>当院について｜ボディケアつしま</title>
+        <meta name="description" content="岡山市の訪問マッサージ治療院、ボディケアつしまについてご紹介します。訪問マッサージ20年の経験を持つ院長が、地域の皆様の健康をサポートします。" />
+      </Helmet>
       <Header />
       <main>
         <div className="bg-primary-800 text-white py-12 sm:py-16">

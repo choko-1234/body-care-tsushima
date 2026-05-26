@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom'
+import { useEffect } from 'react'
 import Header from '../components/layout/Header'
 import Footer from '../components/layout/Footer'
 import FloatingButtons from '../components/layout/FloatingButtons'
+import { Helmet } from 'react-helmet-async'
+
 
 const sections = [
   {
@@ -92,8 +95,18 @@ const sections = [
 ]
 
 export default function PrivacyPolicyPage() {
+  useEffect(() => {
+      const meta = document.createElement('meta')
+      meta.name = 'robots'
+      meta.content = 'noindex'
+      document.head.appendChild(meta)
+      return () => document.head.removeChild(meta)
+    }, [])
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>プライバシーポリシー｜ボディケアつしま</title>
+      </Helmet>
       <Header />
       <main>
         <section className="bg-primary-800 text-white py-12 sm:py-16">

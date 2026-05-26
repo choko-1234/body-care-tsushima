@@ -4,6 +4,7 @@ import Footer from '../components/layout/Footer'
 import FloatingButtons from '../components/layout/FloatingButtons'
 import {useState} from 'react'
 import InsuranceCheck from '../components/sections/InsuranceCheck'
+import { Helmet } from 'react-helmet-async'
 
 const achivements = [
   {
@@ -126,6 +127,10 @@ export default function FirstTimePage() {
   
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>初めての方へ｜ボディケアつしま</title>
+        <meta name="description" content="岡山市の訪問マッサージ、ボディケアつしまを初めてご利用の方へ。医療保険の適用条件や施術内容をわかりやすくご説明します。まずは無料体験からどうぞ。" />
+      </Helmet>
       <Header />
       <main>
         <section className="bg-primary-800 text-white py-12 sm:py-16">
@@ -169,7 +174,7 @@ export default function FirstTimePage() {
                 対象者について
               </h3>
               <div className="w-12 h-0.5 bg-primary-300 mx-auto mt-4"></div>
-              <img src="/elderly_people.jpg" alt="対象者のイメージ" className="rounded-md mt-6 transition-opacity mx-auto h-64 mix-blend-multiply" />
+              <img src="/elderly_people.jpg" alt="対象者のイメージ" className="rounded-md mt-6 transition-opacity mx-auto h-52 mix-blend-multiply" />
             </div>
             <p>
               病名（診断名）に関係なく、医師がマッサージの効果ありと認めた方が対象となりますが、具体的には、主に脳梗塞（脳出血）後遺症、あるいはパーキンソン病や脊髄損傷などが原因で筋肉に麻痺や萎縮（固縮）の症状がある、あるいは関節の拘縮（関節が固くなって動かしにく状態）がある方で、同時に歩行困難な方が対象です。

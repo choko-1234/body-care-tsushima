@@ -9,7 +9,7 @@ export default function Hero() {
           <div className="w-full max-w-4xl mx-auto">
             <img
               src="/menu.jpg"
-              alt="施術風景"
+              alt="岡山のボディケアつしまは訪問マッサージでみなさまを健康な身体に導きます"
               className="w-full h-auto object-contain border border-primary-200 rounded-lg shadow-sm" 
             />
           </div>

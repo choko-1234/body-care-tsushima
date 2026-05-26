@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import Header from '../components/layout/Header'
 import Footer from '../components/layout/Footer'
 import FloatingButtons from '../components/layout/FloatingButtons'
+import { Helmet } from 'react-helmet-async'
 
 const ACUPUNCTURE = [
   {id :1,
@@ -27,6 +28,10 @@ const ACUPUNCTURE = [
 export default function InsuranceStandardsPage() {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>保険・適用基準について｜ボディケアつしま</title>
+        <meta name="description" content="岡山市の訪問マッサージ、ボディケアつしまの医療保険適用基準についてご説明します。マッサージ・鍼灸それぞれの対象となる症状をご確認ください。" />
+      </Helmet>
       <Header />
       <main>
         <section className="bg-primary-800 text-white py-12 sm:py-16">

@@ -2,10 +2,15 @@ import { Link } from 'react-router-dom'
 import Header from '../components/layout/Header'
 import Footer from '../components/layout/Footer'
 import FloatingButtons from '../components/layout/FloatingButtons'
+import { Helmet } from 'react-helmet-async'
 
 export default function ServicePage() {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>施術のポイント｜ボディケアつしま</title>
+        <meta name="description" content="岡山市の訪問マッサージ、ボディケアつしまの施術内容をご紹介します。マッサージ・機能訓練・変形徒手矯正術など、お身体の状態に合わせた施術を行います。" />
+      </Helmet>
       <Header />
       <main>
         <section className="bg-primary-800 text-white py-12 sm:py-16">

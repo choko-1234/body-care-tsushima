@@ -4,10 +4,15 @@ import Footer from '../components/layout/Footer'
 import FloatingButtons from '../components/layout/FloatingButtons'
 import HowToUse from '../components/sections/HowToUse'
 import MapSection from '../components/sections/MapSection'
+import { Helmet } from 'react-helmet-async'
 
 export default function FlowPage() {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>訪問マッサージ施術の流れ｜ボディケアつしま</title>
+        <meta name="description" content="岡山市の訪問マッサージ、ボディケアつしまの施術開始までの流れをご説明します。お問い合わせから無料体験、施術開始まで丁寧にサポートします。" />
+      </Helmet>
       <Header />
       <main>
         <div className="bg-primary-800 text-white py-12 sm:py-16">
