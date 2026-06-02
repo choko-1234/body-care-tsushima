@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="section-container py-12 sm:py-20">
         <div className="flex flex-col gap-10">
           {/* Image - 一番上 */}
-          <div className="w-full max-w-4xl mx-auto">
+          <div className="w-full sm:max-w-4xl mx-auto">
             <img
               src="/menu.jpg"
               alt="岡山のボディケアつしまは訪問マッサージでみなさまを健康な身体に導きます"

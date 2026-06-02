@@ -20,7 +20,7 @@ export default function ContactPage() {
             <p className="text-sm text-primary-200 font-bold mb-3 tracking-wider">CONTACT</p>
             <h1 className="text-3xl sm:text-4xl font-serif font-bold">お問い合わせ</h1>
             <p className="text-base text-primary-100 mt-3 leading-relaxed">
-              お電話・LINE・メールフォームでお気軽にご連絡ください。
+              お電話・メールフォームでお気軽にご連絡ください。
             </p>
           </div>
         </div>
