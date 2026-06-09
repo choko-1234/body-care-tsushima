@@ -47,7 +47,7 @@ export default function InsuranceStandardsPage() {
         </section>
 
         <section className="py-20 bg-cream-50">
-          <div className="max-w-3xl mx-auto text-base sm:text-lg text-gray-700 leading-loose space-y-10">
+          <div className="max-w-3xl mx-auto px-5 text-base sm:text-lg text-gray-700 leading-loose space-y-10">
 
             {/* ブロック1: マッサージ施術について */}
             <div className="space-y-4">

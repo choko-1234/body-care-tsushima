@@ -7,7 +7,7 @@ export default function RepeatRateBanner() {
             主に、脳梗塞（脳出血）後遺症やパーキンソン病の方を対象にした
           </p>
 
-          <h2 className="font-serif font-bold leading-snug text-gray-800">
+          <h1 className="font-serif font-bold leading-snug text-gray-800">
             <span className="block sm:inline text-3xl sm:text-4xl lg:text-5xl text-rose-600">
               リピート率92.3<span className="text-2xl sm:text-3xlg:text-4xl">%</span>
             </span>
@@ -15,7 +15,7 @@ export default function RepeatRateBanner() {
             <span className="block sm:inline text-2xl sm:text-3xl lg:text-4xl text-primary-700 mt-1 sm:mt-0">
               訪問医療マッサージ
             </span>
-          </h2>
+          </h1>
 
           <p className="text-base sm:text-lg text-gray-700 mt-3">
             をお試し下さい。
